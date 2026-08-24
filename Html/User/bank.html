@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard - EquityInv</title>
+    <link rel="stylesheet" href="../../src/output.css" />
+    <link rel="icon" href="../../assets/favicon.png" type="image/x-icon" />
+    <!-- Material Symbols Outlined -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/46f4625f97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-gray-100 z-50">
+        <div class="flex items-center justify-between px-8 md:px-12 lg:px-50 py-2">
+            <div class="flex items-center gap-3">
+                <a href="#" class="flex flex-col items-center gap-1 text-orange-400">
+                    <span class="material-symbols-rounded icon-fill text-orange-400">arrow_back_ios </span>
+                </a>
+            </div>
+            <div class="text-center">
+                <h1 class="text-lg font-medium text-gray-700">Bank</h1>
+            </div>
+            <div class="flex items-center gap-1.5 text-sm font-medium px-3 py-1 rounded-full">
+                <a href="#" class="text-md font-medium text-orange-400">History</a>
+            </div>
+        </div>
+    </nav>
+    <main class="px-3 md:px-12 lg:px-75 pt-20 mb-15 min-h-screen bg-gray-100 pb-3">
+        <div class="w-full rounded-xl bg-white p-5 shadow-sm">
+
+            <!-- Account Number -->
+            <div class="border-b border-gray-200 pb-4">
+                <label class="block text-sm font-semibold text-gray-900">
+                    Account Number
+                </label>
+
+                <div class="mt-4 flex items-center">
+                    <input type="number" value="09070116493"
+                        class="w-full border-0 bg-transparent px-2 text-sm outline-none">
+                </div>
+            </div>
+
+
+            <!-- Bank Name -->
+            <div class="border-b border-gray-200 py-3">
+                <label class="block text-sm font-semibold text-gray-900">
+                    Bank Name
+                </label>
+
+                <input type="text" value="Opay" class="mt-3 w-full border-0 bg-transparent px-2 text-sm outline-none">
+            </div>
+
+
+            <!-- Account Name -->
+            <div class="border-b border-gray-200 py-3">
+                <label class="block text-sm font-semibold text-gray-900">
+                    Account Name
+                </label>
+
+                <input type="text" value="DIVINE UMECHUKWU CHIDIEBERE"
+                    class="mt-3 w-full border-0 bg-transparent px-2 text-sm outline-none">
+            </div>
+
+
+            <!-- Add Bank -->
+            <button type="button"
+                class="mt-7 h-[50px] w-full rounded-xl bg-orange-500 text-sm font-bold text-white transition hover:bg-orange-600">
+                Add Bank
+            </button>
+
+        </div>
+    </main>
+    <footer class=" fixed bottom-0 left-0 w-full z-50 bg-white text-orange-400 shadow-sm h-18">
+        <div class="flex items-center justify-around py-3">
+            <a href="../User/index.html" class="flex flex-col items-center gap-1 text-orange-400">
+                <i class="fa-solid fa-house-user text-orange-400 text-2xl"></i>
+                <span class="text-xs font-medium">Home</span>
+            </a>
+            <a href="../User/products.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-cube text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Products</span>
+            </a>
+            <a href="../User/tasks.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-list-check text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Tasks</span>
+            </a>
+            <a href="../User/refer.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-user-plus text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Invite</span>
+            </a>
+            <a href="../User/profile.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-circle-user text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Profile</span>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

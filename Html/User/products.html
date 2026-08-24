@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard - EquityInv</title>
+    <link rel="stylesheet" href="../../src/output.css" />
+    <link rel="icon" href="../../assets/favicon.png" type="image/x-icon" />
+    <!-- Material Symbols Outlined -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/46f4625f97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-gray-100 z-50">
+        <div class="flex items-center justify-between px-8 md:px-12 lg:px-50 py-2">
+            <div class="flex items-center gap-3">
+                <a href="#" class="flex flex-col items-center gap-1 text-orange-400">
+                    <span class="material-symbols-rounded icon-fill text-orange-400">arrow_back_ios </span>
+                </a>
+            </div>
+            <div class="text-center">
+                <h1 class="text-lg font-medium text-gray-700">My Products</h1>
+            </div>
+            <div class="flex items-center gap-1.5 text-sm font-medium px-3 py-1 rounded-full">
+            </div>
+        </div>
+    </nav>
+    <main class="pt-15 pb-16 min-h-screen bg-gray-100">
+        <!--- balance card -->
+        <div
+            class="mt-2 mx-2 md:mx-12 lg:mx-105 bg-gradient-to-b from-orange-600 to-orange-400 text-white rounded-xl p-7 px-3 md:p-6 lg:p-3 shadow-xl">
+            <div class="pb-1">
+                <p class="mt-1 text-sm font-medium text-gray-300 ">My Total Daily Income</p>
+                <h1 class="text-2xl font-bold">₦0.00</h1>
+            </div>
+        </div>
+        <div class="mt-10 mx-2 md:mx-12 lg:mx-105 rounded-xl p-7 px-3 md:p-6 lg:p-3">
+            <div class="items-center text-center">
+                <i class="fa-solid fa-clipboard text-5xl text-orange-300"></i>
+                <p class="text-orange-300">No package purchased</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class=" fixed bottom-0 left-0 w-full z-50 bg-white text-orange-400 shadow-sm h-18">
+        <div class="flex items-center justify-around py-3">
+            <a href="../User/index.html" class="flex flex-col items-center gap-1 text-orange-400">
+                <i class="fa-solid fa-house-user text-orange-400 text-2xl"></i>
+                <span class="text-xs font-medium">Home</span>
+            </a>
+            <a href="../User/products.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-cube text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Products</span>
+            </a>
+            <a href="../User/tasks.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-list-check text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Tasks</span>
+            </a>
+            <a href="../User/refer.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-user-plus text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Invite</span>
+            </a>
+            <a href="../User/profile.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-circle-user text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Profile</span>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

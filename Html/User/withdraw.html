@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard - EquityInv</title>
+    <link rel="stylesheet" href="../../src/output.css" />
+    <link rel="icon" href="../../assets/favicon.png" type="image/x-icon" />
+    <!-- Material Symbols Outlined -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/46f4625f97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-gray-100 z-50">
+        <div class="flex items-center justify-between px-8 md:px-12 lg:px-50 py-2">
+            <div class="flex items-center gap-3">
+                <a href="#" class="flex flex-col items-center gap-1 text-orange-400">
+                    <span class="material-symbols-rounded icon-fill text-orange-400">arrow_back_ios </span>
+                </a>
+            </div>
+            <div class="text-center">
+                <h1 class="text-lg font-medium text-gray-700">Withdraw</h1>
+            </div>
+            <div class="flex items-center gap-1.5 text-sm font-medium px-3 py-1 rounded-full">
+                <a href="#" class="text-md font-medium text-orange-400">History</a>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-15 pb-20 min-h-screen bg-gray-100">
+        <div
+            class="mt-2 mx-2 md:mx-12 lg:mx-75 bg-gradient-to-b from-orange-600 to-orange-400 text-white rounded-xl p-7 px-3 md:p-6 lg:p-3 shadow-sm">
+            <div class="pb-1">
+                <p class="mt-1 text-sm font-medium text-gray-300 ">My Balance</p>
+                <h1 class="text-2xl font-bold">₦0.00</h1>
+            </div>
+        </div>
+        <div class="mt-2 mx-2 md:mx-12 lg:mx-75 bg-[#E7E5F3] rounded-xl">
+            <div class="pb-1">
+                <p class="p-2 mt-1 text-md  font-medium text-purple-500 ">Minimum Withdrawal: ₦800.00</p>
+            </div>
+        </div>
+        <div class="mt-2 mx-2 md:mx-12 lg:mx-75 bg-white rounded-xl shadow-sm">
+            <div class="p-3">
+                <h1 class="p-2 mt-1 text-md  font-medium text-gray-500 ">Enter Amount: </h1>
+                <div
+                    class="px-2 flex border-b border-gray-400 items-center transition-colors focus-within:border-orange-500">
+                    <span class="p-1 m-3 text-2xl font-bold text-gray-700 ">₦</span>
+                    <input type="number" placeholder="Enter Amount"
+                        class="text-lg focus:placeholder:text-gray-500 p-3 w-full border-0 bg-transparent py-2 outline-none placeholder:text-gray-400">
+                </div>
+                <div class="flex justify-between">
+                    <p class="p-2 mt-1 text-md  font-medium text-gray-500">To receive: ₦0</p>
+                    <p class="p-2 mt-1 text-md  font-medium text-gray-500">Fee: 17%</p>
+                </div>
+                <div
+                    class="mx-4 flex justify-center rounded-lg border border-orange-400 bg-orange-50 px-4 py-3 sm:mx-8 md:mx-16 lg:mx-40">
+                    <a href="#"
+                        class="text-center text-sm font-bold text-orange-400 transition hover:text-orange-500 sm:text-base">
+                        Add Bank Account to place withdrawals
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2 mx-2 md:mx-12 lg:mx-75 bg-white rounded-xl shadow-sm">
+            <div class="p-2">
+                <h1 class="pt-3 pb-2 px-3 text-lg font-extrabold text-gray-800">Withdrawal Bank</h1>
+                <p class="px-3 mb-2 text-md  font-bold text-gray-800">You are required to bind your bank account first
+                    before placing withdrawal</p>
+
+                <div class="mx-3 justify-center flex rounded-lg bg-orange-400">
+                    <button href="" class="my-3 mx-10 font-bold text-white"><a href="">Add Bank Account to place
+                            withdrawals</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2 mx-2 md:mx-12 lg:mx-75 bg-white rounded-xl shadow-sm">
+            <div class="p-2">
+                <h1 class="pt-3 pb-2 px-3 text-lg font-extrabold text-gray-800">Instructions</h1>
+                <p class="px-3 mb-2 text-md font-medium text-gray-800"><i class="fa-solid fa-circle-check"
+                        style="color: #2ecc71;"></i>Minimum withdrawal: ₦800.00</p>
+                <p class="px-3 mb-2 text-md  font-medium text-gray-800"><i class="fa-solid fa-circle-check"
+                        style="color: #2ecc71;"></i>You can withdraw up to 5 times daily</p>
+                <p class="px-3 mb-2 text-md  font-medium text-gray-800"><i class="fa-solid fa-circle-check"
+                        style="color: #2ecc71;"></i>Maximum single withdrawal: ₦500,000.00</p>
+                <p class="px-3 mb-2 text-md  font-medium text-gray-800"><i class="fa-solid fa-circle-check"
+                        style="color: #2ecc71;"></i>Withdrawal Fee: 17%</p>
+                <p class="px-3 mb-2 text-md  font-medium text-gray-800"><i class="fa-solid fa-circle-check"
+                        style="color: #2ecc71;"></i>Please endeavour to cross check your bank details very well to avoid
+                    loss of funds.</p>
+                <p class="px-3 mb-2 text-md  font-medium text-gray-800"><i class="fa-solid fa-circle-check"
+                        style="color: #2ecc71;"></i>If you encounter issues with your withdrawal please contact our
+                    support team to sort it out.</p>
+            </div>
+        </div>
+    </main>
+    <footer class=" fixed bottom-0 left-0 w-full z-50 bg-white text-orange-400 shadow-sm h-18">
+        <div class="flex items-center justify-around py-3">
+            <a href="../User/index.html" class="flex flex-col items-center gap-1 text-orange-400">
+                <i class="fa-solid fa-house-user text-orange-400 text-2xl"></i>
+                <span class="text-xs font-medium">Home</span>
+            </a>
+            <a href="../User/products.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-cube text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Products</span>
+            </a>
+            <a href="../User/tasks.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-list-check text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Tasks</span>
+            </a>
+            <a href="../User/refer.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-user-plus text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Invite</span>
+            </a>
+            <a href="../User/profile.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-circle-user text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Profile</span>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

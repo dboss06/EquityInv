@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard - EquityInv</title>
+    <link rel="stylesheet" href="../../src/output.css" />
+    <link rel="icon" href="../../assets/favicon.png" type="image/x-icon" />
+    <!-- Material Symbols Outlined -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/46f4625f97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-gray-100 z-50">
+        <div class="flex items-center justify-between px-8 md:px-12 lg:px-50 py-3">
+            <div class="flex items-center gap-3">
+                <img src="https://via.placeholder.com/40" alt="User avatar"
+                    class="w-10 h-10 rounded-full object-cover" />
+                <div>
+                    <p class="text-sm text-gray-500 leading-tight">Welcome Back,</p>
+                    <p class="text-base font-bold text-gray-900 leading-tight">09070116493</p>
+                </div>
+            </div>
+            <div
+                class="flex items-center gap-1.5 border border-green-300 bg-green-50 text-green-600 text-sm font-medium px-3 py-1 rounded-full">
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+                Live
+            </div>
+        </div>
+
+    </nav>
+    <main class="pt-16 pb-16 min-h-screen bg-gray-100">
+        <!--- balance card -->
+        <div
+            class="mt-7 mx-2 md:mx-12 lg:mx-50 bg-gradient-to-b from-orange-600 to-orange-400 text-white rounded-xl p-7 px-3 md:p-6 lg:p-3 shadow-xl">
+            <div class="pb-7 border-dashed border-b-1 border-white">
+                <p class="mt-1 text-md font-semibold text-white/80 ">Total Balance</p>
+                <h1 class="text-3xl font-black">₦800.00</h1>
+            </div>
+            <div class="mt-2 flex justify-between">
+                <div class="">
+                    <p class="mt-1 text-sm font-semibold text-white/80 ">Deposit Balance</p>
+                    <h1 class="text-xl font-black">₦0.00</h1>
+                </div>
+                <div class="">
+                    <p class="mt-1 text-sm font-semibold text-white/80 ">Withdrawal Balance</p>
+                    <h1 class="text-xl font-black text-end">₦800.00</h1>
+                </div>
+            </div>
+            <div class="mt-3 flex justify-between">
+                <div class="w-3/6 bg-white text-center py-2 me-2 rounded-xl">
+                    <a href="" class="font-semibold w-100 text-orange-400 text-center">Deposit</a>
+                </div>
+                <div class="w-3/6 bg-white text-center py-2 ms-2 rounded-xl">
+                    <a href="" class="font-semibold w-100 text-orange-400 text-center">Withdraw</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="shadow-xl px-1 mt-3 mx-3 md:px-12 lg:mx-50 flex items-center justify-around py-5 bg-white rounded-xl">
+            <a href="#" class="flex flex-col items-center gap-1 text-gray-700">
+                <div class="bg-orange-500 rounded-xl">
+                    <span class="material-symbols-rounded icon-fill text-orange-200 p-3">account_balance_wallet</span>
+                </div>
+                <span class="text-sm font-medium">Deposit</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1 text-gray-700">
+                <div class="bg-orange-500 rounded-xl">
+                    <span class="material-symbols-rounded icon-fill text-orange-200 p-4">request_quote</span>
+                </div>
+                <span class="text-sm font-medium">Withdraw</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1 text-gray-700">
+                <div class="bg-orange-500 rounded-xl">
+                    <span class="material-symbols-rounded icon-fill text-orange-200 p-4">history</span>
+                </div>
+                <span class="text-sm font-medium">History</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1 text-gray-700">
+                <div class="bg-orange-500 rounded-xl">
+                    <span class="material-symbols-rounded icon-fill text-orange-200 p-4">account_balance</span>
+                </div>
+                <span class="text-sm font-medium">Bank</span>
+            </a>
+        </div>
+        <div class="mt-7 mx-2 md:mx-12 lg:mx-50 p-7 px-3 md:p-6 lg:p-4">
+            <h1 class="text-lg font-black text-gray-700">Available Products </h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 pt-3">
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 1</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 30
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦3,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦750</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦22,500</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">956</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦3,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 2</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 30
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦6,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦1,500</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦60,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">988</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦6,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 3</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 40
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦10,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦2,500</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦100,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">983</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦10,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 4</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 40
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦20,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦5,000</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦200,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">999</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦20,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 5</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 40
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦50,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦12,500</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦500,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">998</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦50,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 6</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 40
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦100,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦25,000</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦1,000,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">998</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦100,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 7</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 40
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦200,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦50,000</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦2,000,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">1,000</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦200,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 8</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 40
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦300,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦75,000</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦3,000,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">1,000</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦300,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 9</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 40
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦350,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦87,500</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦3,500,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">1,000</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦350,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 10</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 40
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦500,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦125,000</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦5,000,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">1,000</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦500,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 11</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 40
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦750,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦187,500</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦7,500,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">1,000</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦750,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 12</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 40
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦900,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦225,000</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦9,000,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">1,000</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦900,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-white rounded-lg shadow-xl">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-gray-700">EQUITY 13</h1>
+                        <small class="bg-green-500 text-[10px] text-white font-semibold p-1 rounded">Valid for 40
+                            days</small>
+                    </div>
+                    <div class="flex px-1 pt-2">
+                        <div class="h-25 w-30 ">
+                            <img src="../../assets/growth.jpg" alt="invest" class="h-30 w-35 rounded-xl">
+                        </div>
+                        <div class="grid grid-cols-2 ps-2">
+                            <div class="me-15">
+                                <p class="text-sm font-medium text-gray-400 ">Cost</p>
+                                <h3 class="text-md font-bold text-gray-700">₦1,000,000</h3>
+                            </div>
+                            <div class="ms-13 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Daily Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦250,000</h3>
+                            </div>
+                            <div class="me-13">
+                                <p class="text-sm font-medium text-gray-400 ">Total Earning</p>
+                                <h3 class="text-md font-bold text-gray-700">₦10,000,000</h3>
+                            </div>
+                            <div class="ms-10 text-end">
+                                <p class="text-sm font-medium text-gray-400 ">Available Units</p>
+                                <h3 class="text-md font-bold text-gray-700">1,000</h3>
+                            </div>
+                            <div class="me-13 mt-3">
+                                <h1 class="text-xl font-black text-orange-400">₦1,000,000</h1>
+                            </div>
+                            <div class="ms-10 text-end mt-3">
+                                <button
+                                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm px-5 py-1 rounded-2xl transition">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class=" fixed bottom-0 left-0 w-full z-50 bg-white text-orange-400 shadow-sm h-18">
+        <div class="flex items-center justify-around py-3">
+            <a href="../User/index.html" class="flex flex-col items-center gap-1 text-orange-400">
+                <i class="fa-solid fa-house-user text-orange-400 text-2xl"></i>
+                <span class="text-xs font-medium">Home</span>
+            </a>
+            <a href="../User/products.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-cube text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Products</span>
+            </a>
+            <a href="../User/tasks.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-list-check text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Tasks</span>
+            </a>
+            <a href="../User/refer.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-user-plus text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Invite</span>
+            </a>
+            <a href="../User/profile.html" class="flex flex-col items-center gap-1 text-gray-400">
+                <i class="fa-solid fa-circle-user text-gray-400 text-2xl"></i>
+                <span class="text-xs font-medium">Profile</span>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
